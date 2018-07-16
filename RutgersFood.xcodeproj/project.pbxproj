@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C93C951620F69C77008E0E3B /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C951520F69C77008E0E3B /* TestModels.swift */; };
 		C93C951820F6A859008E0E3B /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = C93C951720F6A859008E0E3B /* test.json */; };
+		C96A86CF20FCFDD4007DBAB6 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A86CE20FCFDD4007DBAB6 /* FoodViewModel.swift */; };
 		C9A4E9D720F5143D004279A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4E9D620F5143D004279A9 /* AppDelegate.swift */; };
 		C9A4E9D920F5143D004279A9 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4E9D820F5143D004279A9 /* FoodViewController.swift */; };
 		C9A4E9DE20F5143D004279A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A4E9DD20F5143D004279A9 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		C93C951520F69C77008E0E3B /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
 		C93C951720F6A859008E0E3B /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		C96A86CE20FCFDD4007DBAB6 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		C9A4E9D320F5143D004279A9 /* RutgersFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A4E9D620F5143D004279A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A4E9D820F5143D004279A9 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C96A86CD20FCFDB1007DBAB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C96A86CE20FCFDD4007DBAB6 /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C9A4E9CA20F5143D004279A9 = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +79,9 @@
 				C9A4E9D620F5143D004279A9 /* AppDelegate.swift */,
 				C9F95B3720F516D300B494FD /* Networking */,
 				C9F95B3620F516CA00B494FD /* Controller */,
-				C9F95B3520F516BD00B494FD /* View */,
 				C9F95B3420F516B700B494FD /* Model */,
+				C9F95B3520F516BD00B494FD /* View */,
+				C96A86CD20FCFDB1007DBAB6 /* ViewModel */,
 				C9A4E9DD20F5143D004279A9 /* Assets.xcassets */,
 				C9A4E9DF20F5143D004279A9 /* LaunchScreen.storyboard */,
 				C9A4E9E220F5143D004279A9 /* Info.plist */,
@@ -191,6 +202,7 @@
 				C9F95B3920F519E200B494FD /* FoodView.swift in Sources */,
 				C9DCB87820F65F3100A999B0 /* MenuModels.swift in Sources */,
 				C9F95B3D20F5487800B494FD /* DiningHallCell.swift in Sources */,
+				C96A86CF20FCFDD4007DBAB6 /* FoodViewModel.swift in Sources */,
 				C9A4E9D920F5143D004279A9 /* FoodViewController.swift in Sources */,
 				C9A4E9D720F5143D004279A9 /* AppDelegate.swift in Sources */,
 				C93C951620F69C77008E0E3B /* TestModels.swift in Sources */,
