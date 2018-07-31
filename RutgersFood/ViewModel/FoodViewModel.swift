@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class FoodViewModel {
     
@@ -17,5 +18,9 @@ class FoodViewModel {
     
     init() {
         
+    }
+    
+    func registerCells(forTableView tableView: UITableView) {
+        tableView.register(DiningSectionCell.self, forCellReuseIdentifier: DiningSectionCell.reuseIdentifier)
     }
 }

@@ -1,24 +1,33 @@
 {
-  "dining_halls": [
-    {
-      "name": "Brower Commons",
-      "campus": "College Ave",
-      "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/brower.jpg"
-    },
-    {
-      "name": "Livingston Dining Hall",
-      "campus": "Livingston",
-      "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/livingstondininghall.jpg"
-    },
-    {
-      "name": "Busch Dining Hall",
-      "campus": "Busch",
-      "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/buschdininghall.jpg"
-    },
-    {
-      "name": "Neilson Dining Commons",
-      "campus": "Cook/Douglas",
-      "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/neilsondininghall.jpg"
-    }
-  ]
+    "dining_halls": [
+        {
+        "name": "Brower Commons",
+        "campus": "College Ave",
+        "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/brower.jpg"
+        },
+        {
+        "name": "Livingston Dining Hall",
+        "campus": "Livingston",
+        "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/livingstondininghall.jpg"
+        },
+        {
+        "name": "Busch Dining Hall",
+        "campus": "Busch",
+        "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/buschdininghall.jpg"
+        },
+        {
+        "name": "Neilson Dining Commons",
+        "campus": "Cook/Douglas",
+        "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/neilsondininghall.jpg"
+        }
+    ],
+    "on_campus": [
+        {
+        "name": "Knight Wagon",
+        "campuses": ["CAC", "LIV", "BUS", "C/D "],
+        "imageURL": "https://res.cloudinary.com/salamander1012/image/upload/neilsondininghall.jpg",
+        "timings"
+        }
+    ]
+
 }

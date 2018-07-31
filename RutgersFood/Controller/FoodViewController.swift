@@ -9,7 +9,17 @@
 import UIKit
 
 class FoodViewController: UIViewController {
-
+    
+    let viewModel: FoodViewModel = {
+        let vm = FoodViewModel()
+        return vm
+    }()
+    
+    let tableView: UITableView = {
+        let tb = UITableView()
+        return tb
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewConfig()
@@ -18,16 +28,25 @@ class FoodViewController: UIViewController {
     func viewConfig() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Rutgers Food"
-        let foodView = FoodView()
-        foodView.tableView.delegate = self
-        foodView.tableView.dataSource = self
-        view = foodView
+        setUpTableViewConstraints()
+        viewModel.registerCells(forTableView: tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func setUpTableViewConstraints() {
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(tableView)
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 }
 
 extension FoodViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

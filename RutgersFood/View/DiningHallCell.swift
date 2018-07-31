@@ -80,6 +80,7 @@ class DiningHallCell: UICollectionViewCell {
 
 extension UIImageView {
     public func image(fromUrl urlString: String) {
+        print("getting called")
         guard let url = URL(string: urlString) else {
             print("bad image url")
             return
